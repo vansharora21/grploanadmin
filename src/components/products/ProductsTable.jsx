@@ -3,11 +3,11 @@ import { Edit, Search, Trash2 } from "lucide-react";
 import { useState } from "react";
 
 const PRODUCT_DATA = [
-  { id: 1, name: "Wireless Earbuds", category: "Electronics", price: 59.99, stock: 143, sales: 1200 },
-  { id: 2, name: "Leather Wallet", category: "Accessories", price: 39.99, stock: 89, sales: 800 },
-  { id: 3, name: "Smart Watch", category: "Electronics", price: 199.99, stock: 56, sales: 650 },
-  { id: 4, name: "Yoga Mat", category: "Fitness", price: 29.99, stock: 210, sales: 950 },
-  { id: 5, name: "Coffee Maker", category: "Home", price: 79.99, stock: 78, sales: 720 },
+  { id: 1, name: " Anuv Jain", category: "Electronics", revenue: 5934234.99, Deals: 14300, sales: 12005 },
+  { id: 2, name: " Diljeet Chopra", category: "Clothes  ", revenue: 397777.99, Deals: 8900, sales: 8005 },
+  { id: 3, name: "john singh", category: "Electronics", revenue: 199999.99, Deals: 5656430, sales: 6505 },
+  { id: 4, name: "Rahul Yadav", category: "Fitness", revenue: 290000.99, Deals: 21089654, sales: 9553250 },
+  { id: 5, name: "Yash Dholiwal", category: "Home", revenue: 1000.99, Deals: 7868765645, sales: 75520 },
 ];
 
 const ProductsTable = () => {
@@ -49,7 +49,7 @@ const ProductsTable = () => {
       transition={{ delay: 0.2 }}
     >
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-xl font-semibold text-gray-100">Product List</h2>
+        <h2 className="text-xl font-semibold text-gray-100">Retailers List</h2>
         <div className="relative">
           <input
             type="text"
@@ -73,13 +73,16 @@ const ProductsTable = () => {
                 Category
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
-                Price
+                revenue
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
-                Stock
+                Deals
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
                 Sales
+              </th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
+                location
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
                 Actions
@@ -114,10 +117,10 @@ const ProductsTable = () => {
                     {product.category}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
-                    ${product.price.toFixed(2)}
+                    ${product.revenue.toFixed(2)}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
-                    {product.stock}
+                    {product.Deals}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
                     {product.sales}
