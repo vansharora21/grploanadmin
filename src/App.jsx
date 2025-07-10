@@ -10,6 +10,7 @@ import OrdersPage from "./pages/OrdersPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
 import SettingsPage from "./pages/SettingsPage";
 import LoginPage from "./pages/Login-Page";
+import ReportsAndLogs from "./pages/Report";
 
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
@@ -44,7 +45,7 @@ function App() {
         <Route path='/sales' element={<ProtectedRoute><SalesPage /></ProtectedRoute>} />
         <Route path='/orders' element={<ProtectedRoute><OrdersPage /></ProtectedRoute>} />
         <Route path='/analytics' element={<ProtectedRoute><AnalyticsPage /></ProtectedRoute>} />
-        <Route path='/report' element={<ProtectedRoute><AnalyticsPage /></ProtectedRoute>} />
+        <Route path='/report' element={<ProtectedRoute><ReportsAndLogs/></ProtectedRoute>} />
         <Route path='/settings' element={<ProtectedRoute><SettingsPage /></ProtectedRoute>} />
       </Routes>
 

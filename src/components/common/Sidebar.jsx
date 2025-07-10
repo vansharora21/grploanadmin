@@ -9,8 +9,8 @@ const SIDEBAR_ITEMS = [
 	{ name: "Group & Member Management", icon: Users, color: "#EC4899", href: "/users" },
 	{ name: "Loan Approval & Disbursement", icon: DollarSign, color: "#10B981", href: "/sales" },
 	{ name: "EMI & Collection Module", icon: ShoppingCart, color: "#F59E0B", href: "/orders" },
-	{ name: "Support & Escalation", icon: TrendingUp, color: "#3B82F6", href: "/analytics" },
 	{ name: "Reports & Logs", icon: ClipboardPlus, color: "#3B82F6", href: "/report" },
+	{ name: "Support & Escalation", icon: TrendingUp, color: "#3B82F6", href: "/analytics" },
 	{ name: "Settings", icon: Settings, color: "#6EE7B7", href: "/settings" },
 ];
 
